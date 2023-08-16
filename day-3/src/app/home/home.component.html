@@ -1,0 +1,10 @@
+<p>home works!</p>
+<button [disabled]="isDisabled" (click)="[handleClick(), sendData()]">
+  click
+</button>
+
+<div *ngIf="isDisabled">
+  <h2>{{ data.randomName }}</h2>
+  <p>{{ data.randomAge }}</p>
+  <img [src]="data.randomImage" alt="" />
+</div>
